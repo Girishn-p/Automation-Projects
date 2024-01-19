@@ -1,19 +1,13 @@
 package seleniumbasic;
-		import java.util.List;
-
+import java.util.List;
 import org.openqa.selenium.By;
-
-		import org.openqa.selenium.WebDriver;
-
-		import org.openqa.selenium.WebElement;
-
-		import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-
-		public class AutoSuggention {
+public class AutoSuggention {
 
 
 		public static void main(String[] args) throws InterruptedException {
@@ -51,7 +45,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 		driver.findElement(By.id("divpaxinfo")).click();
 		Assert.assertFalse(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
 
-		//Assert.assertFalse(true);System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
+		//Assert.assertFalse(true);
+		System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
 
 		driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).click();
 
